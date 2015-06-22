@@ -62,8 +62,7 @@ in the time zone results in `2012-03-31T20:00:00`, but we return that rounded va
 
 ==== Offset
 
-The `offset` option can be provided for shifting the date bucket intervals boundaries after any other shifts because of
-time zones are applies. This for example makes it possible that daily buckets go from 6AM to 6AM the next day instead of starting at 12AM
+The `offset` option can be provided for shifting the boundaries of date bucket intervals, after any `time_zone` shifts have been applied. This for example makes it possible that daily buckets go from 6AM to 6AM the next day instead of starting at 12AM
 or that monthly buckets go from the 10th of the month to the 10th of the next month instead of the 1st.
 
 The `offset` option accepts positive or negative time durations like "1h" for an hour or "1M" for a Month. See <<time-units>> for more
